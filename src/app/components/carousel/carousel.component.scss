@@ -1,0 +1,87 @@
+.carousel{
+    margin-bottom: 5em;
+    
+    
+}
+
+h2{
+    color: #D43545;
+    font-size: 36px;
+    font-weight: 700;
+    margin: 1em 3em;
+    
+} 
+
+.container{
+    display: inline-flex;
+    position: relative;
+    align-items: center;
+    width: 110vw;
+    overflow-x: hidden;
+    cursor: grab;
+    margin-left: -5em;
+    
+    img{
+        margin-right: 2.5em;
+        opacity: 0.5;
+        transition: 0.5s;
+        width: 270px;
+        height: 364px;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        
+    }
+
+    img:hover{
+        opacity: 1;
+        width: 300px;
+        height: 395px;
+        cursor: pointer;
+        
+    }
+    
+}
+
+#btnright{
+    background-color: transparent;
+    border: none;
+    height: 100%;
+    position: absolute;
+    right: 125px;
+    transition: 0.5s;
+    
+    .button-image{
+        width: 50px;
+        height: 50px;
+        box-shadow: none;
+        opacity: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+#btnleft{
+    background-color: transparent;
+    border: none;
+    height: 100%;
+    position: absolute;
+    right: 1900px;
+    transition: 0.5s;
+    
+    .button-image{
+        width: 50px;
+        height: 50px;
+        margin: 0 0 0 2.5em;
+        box-shadow: none;
+        opacity: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: rotate(180deg);
+    }
+}
+
+#btnright:hover, #btnleft:hover{
+    cursor: pointer;
+    background-color: rgb(0, 0, 0, 0.2);
+}
