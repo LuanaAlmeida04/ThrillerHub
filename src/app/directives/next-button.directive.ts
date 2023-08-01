@@ -10,7 +10,7 @@ export class NextButtonDirective {
 
   @HostListener('click')
   nextFunc(){
-    var elm = this.el.nativeElement.parentElement.parentElement;
+    var elm = this.el.nativeElement.parentElement.parentElement.parentElement.children[0];
     var item = elm.getElementsByClassName("item")
     elm.append(item[0]);
 
