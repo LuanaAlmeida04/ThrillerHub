@@ -1,1 +1,14 @@
-<p>login works!</p>
+<div class="container">
+    <div class="container-form">
+        <div class="container-image"></div>
+        <form class="form" (ngSubmit)="submit()" [formGroup]="loginForm" #formDir="ngForm">
+            <h1>Sign In</h1>
+            <input type="text" placeholder="Acess" required formControlName="title">
+            <div *ngIf="title.invalid && formDir.submitted" class="validation"><p>Acess is required</p></div>
+            <input type="password" placeholder="Password" required formControlName="password">
+            <div *ngIf="password.invalid && formDir.submitted" class="validation"><p>Password is required</p></div>
+            <button><a href="">Continue</a></button>
+            <p>Doesn't have account? <a href="signup">Sign Up</a></p>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="container-form">
+        <form class="form" (ngSubmit)="submit()" [formGroup]="signForm" #formDir="ngForm">
+            <h1>Sign Up</h1>
+            <input type="text" placeholder="Acess" required formControlName="title">
+            <div *ngIf="title.invalid && formDir.submitted" class="validation"><p>Acess is required</p></div>
+            <input type="password" placeholder="Create a password"  required formControlName="password">
+            <div *ngIf="password.invalid && formDir.submitted" class="validation"><p>Password is required</p></div>
+            <input type="text" placeholder="Confirm the password"  required formControlName="passconfirm">
+            <div *ngIf="signForm.errors?.['passwordmatcherror']" class="validation"><p>Password does not match</p></div>
+            <button [disabled]="signForm.invalid"><a href="login">Create Account</a></button>
+            <p>Alredy have a account? <a href="login">Sign In</a></p>
+        </form>
+        <div class="container-image"></div>
+    </div>  
+</div>

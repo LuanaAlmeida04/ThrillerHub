@@ -1,6 +1,6 @@
 .carousel{
     margin-bottom: 5em;
-    
+    overflow: hidden;
     
 }
 
@@ -20,6 +20,8 @@ h2{
     overflow: hidden;
     cursor: grab;
     margin-left: -5em;
+
+    
     
     img{
         margin-right: 2.5em;
@@ -38,6 +40,8 @@ h2{
         cursor: pointer;
         
     }
+
+    
     
 }
 

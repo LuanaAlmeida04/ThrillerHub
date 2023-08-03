@@ -12,6 +12,9 @@ import { MenuComponent } from './components/menu/menu.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { NextButtonDirective } from './directives/next-button.directive';
 import { PreviousButtonDirective } from './directives/previous-button.directive';
+import { SignComponent } from './components/sign/sign.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -24,11 +27,15 @@ import { PreviousButtonDirective } from './directives/previous-button.directive'
     MenuComponent,
     CarouselComponent,
     NextButtonDirective,
-    PreviousButtonDirective
+    PreviousButtonDirective,
+    SignComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
