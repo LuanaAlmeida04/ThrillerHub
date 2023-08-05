@@ -10,8 +10,6 @@ import { LoginComponent } from './components/login/login.component';
 import { UserComponent } from './components/user/user.component';
 import { MenuComponent } from './components/menu/menu.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
-import { NextButtonDirective } from './directives/next-button.directive';
-import { PreviousButtonDirective } from './directives/previous-button.directive';
 import { SignComponent } from './components/sign/sign.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -26,8 +24,6 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     UserComponent,
     MenuComponent,
     CarouselComponent,
-    NextButtonDirective,
-    PreviousButtonDirective,
     SignComponent
   ],
   imports: [
